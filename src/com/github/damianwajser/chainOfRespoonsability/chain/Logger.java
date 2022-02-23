@@ -8,7 +8,7 @@ public abstract class Logger {
 
 	protected Logger nextLevelLogger;
 
-	protected abstract void log(int level, String msg);
+	public abstract void log(int level, String msg);
 
 	public Logger setNextLevelLogger(Logger nextLevelLogger) {
 		this.nextLevelLogger = nextLevelLogger;
